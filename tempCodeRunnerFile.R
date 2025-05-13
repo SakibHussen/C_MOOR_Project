@@ -1,6 +1,5 @@
 library(shiny)
 library(shinyjs)
-library(rsconnect)
 
 # Function to validate DNA sequence
 validate_dna <- function(dna) {
@@ -76,7 +75,7 @@ ui <- fluidPage(
     }
     input[type='text'] {
       font-family: 'Courier New', monospace !important;
-      font-size: 24px !important;
+      font-size: 18px !important;
       letter-spacing: 3px !important;
       padding: 10px !important;
       border-radius: 5px !important;
@@ -260,4 +259,3 @@ server <- function(input, output, session) {
 }
 
 # Run the app
-shinyApp(ui = ui, server = server)
