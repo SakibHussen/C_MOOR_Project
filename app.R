@@ -1,6 +1,12 @@
 library(shiny)
 library(shinyjs)
 library(rsconnect)
+library(rsconnect)
+rsconnect::writeManifest(
+  appDir = "/Users/sakibhussen/Desktop/C_MOOR/C_MOOR_Project",
+  appPrimaryDoc = "app_transcription.R",
+  appFiles = NULL
+)
 
 # Function to validate DNA sequence
 validate_dna <- function(dna) {
