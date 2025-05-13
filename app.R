@@ -2,7 +2,7 @@ library(shiny)
 library(shinyjs)
 library(rsconnect)
 rsconnect::writeManifest(
-  appDir = "/Users/sakibhussen/Desktop/C_MOOR/C_MOOR_Project",
+  appDir = ".",
   appPrimaryDoc = "app.R",
   appFiles = NULL
 )
