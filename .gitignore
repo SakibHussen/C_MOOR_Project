@@ -2,6 +2,8 @@
 __pycache__/
 *.py[cod]
 *$py.class
+# ignoring the test file
+tempCodeRunnerFile.R
 
 # C extensions
 *.so
@@ -172,4 +174,4 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
-.tempCodeRunnerFile.R
+
