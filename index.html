@@ -1,60 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DNA Transcription Lesson</title>
   <style>
     html, body {
-      height: 100vh;
+      height: 100%;
       margin: 0;
       padding: 0;
+      overflow: hidden;
+    }
+    .lesson{
+      font-size: 1.5em;
+      margin-top: 2rem; /* Add more or less space as you like */
+  padding: 0 20px;
+    }
+    .header, .footer {
+      padding: 10px 20px;
+      background: #fff;
+      font-size: 1em;
+      flex-shrink: 0;
+    }
+    .footer {
+      background: #f6fafb;
+      border-top: 1px solid #eee;
+    }
+    .main-iframe {
+      flex: 1 1 auto;
+      width: 100%;
+      border: none;
+      min-height: 0;
+      display: block;
       overflow: hidden;
     }
     body {
       display: flex;
       flex-direction: column;
       height: 100vh;
-    }
-    .content-wrapper {
-      flex: 0 0 auto;
-      padding: 10px 20px;
-      overflow-y: auto;
-      max-height: 40vh;
-    }
-    iframe {
-      flex: 1 1 auto;
-      width: 100%;
-      border: none;
-      min-height: 0;
-      height: auto;
+      min-height: 100vh;
+      width: 100vw;
+      box-sizing: border-box;
       overflow: hidden;
+    }
+    @media (max-width: 600px) {
+      .header, .footer {
+        padding: 8px 4px;
+        font-size: 0.95em;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="content-wrapper">
+  <div class="header">
     <h1>🧬 DNA Transcription Practice Tool</h1>
-
-    <p>This lesson helps you understand how DNA is transcribed into RNA — the first step of the Central Dogma of molecular biology.</p>
-
-    <h2>📘 Transcription Rules</h2>
-    <ul>
-      <li>A → U</li>
-      <li>T → A</li>
-      <li>C → G</li>
-      <li>G → C</li>
+    <ul style="margin:0;">
+      <li>A → U &nbsp; T → A &nbsp; C → G &nbsp; G → C</li>
     </ul>
-
-    <h2>🧪 Try It Below</h2>
+    <p style="margin:0;">Enter your RNA sequence based on the DNA shown, then click <strong>Transcribe</strong>.</p>
   </div>
-  <iframe src="https://0196caf6-5433-e8d9-11df-4f754234abc6.share.connect.posit.cloud/"></iframe>
+  <iframe
+    class="main-iframe"
+    src="https://0196caf6-5433-e8d9-11df-4f754234abc6.share.connect.posit.cloud/"
+    allowfullscreen
+  ></iframe>
+ <div class="lesson">
 
-  <div class="content-wrapper">
-    <p>Enter your RNA sequence based on the DNA shown, then click <strong>Transcribe</strong>.</p>
+  <h3>What we learnt so far:</h3>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit blanditiis sapiente facilis nam, fugiat excepturi architecto voluptas repellendus ducimus vel magnam eligendi harum distinctio illo ipsa illum minima voluptates quod!</p>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit commodi dolorum voluptas. Delectus beatae aliquam libero, cumque sint optio architecto aliquid tempore molestias praesentium dolores fuga voluptatem illum quidem doloribus.</p>
 
-    <h2>✅ Learning Goal</h2>
-    <p>By the end, you'll be able to convert any DNA sequence into its correct RNA counterpart.</p>
-  </div>
+
+ </div>
 </body>
 </html>
