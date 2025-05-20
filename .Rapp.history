@@ -1,0 +1,250 @@
+install.packages('IRkernel')
+library(IRkernel)
+IRkernel::installspec(user = FALSE)
+pip install jupyter
+jupyter kernelspec --version
+pip install jupyter
+jupyter --version
+library(IRkernel)#
+IRkernel::installspec(user = FALSE)
+install.packages('IRkernel')#
+IRkernel::installspec(user = FALSE)
+install.packages('languageserver')
+languageserver::languageserver()
+install.packages("ggplot2")
+install.packages('IRkernel')#
+IRkernel::installspec(user = FALSE)
+install.packages('jupyter_client')
+pip install jupyter
+version
+options(repos = c(CRAN = "https://cran.r-project.org/"))
+data <- iris
+head(data)
+summary(data)
+str(data)
+x=c(6.23,5.58,7.06,5.20)
+ecdf_data=ecdf(x)
+plot(ecdf_data,verticals=TRUE,do.points=T)
+x=c(5,6,6,4,3,3,6)
+ecdf_data=ecdf(x)
+plot(ecdf_data,verticals=TRUE,do.points=T)
+ecdf_data
+plot(x_values, ecdf_data, type = 's', ylim = c(0, 1), xlab = 'Data', ylab = 'ECDF', main = 'Empirical Cumulative Distribution Function')
+plot( ecdf_data, type = 's', ylim = c(0, 1), xlab = 'Data', ylab = 'ECDF', main = 'Empirical Cumulative Distribution Function')
+plot(ecdf_data,verticals=TRUE,do.points=T)
+x=c(200,500,680,300,670,500,700,300)
+ecdf_data=ecdf(x)
+plot(ecdf_data,verticals=TRUE,do.points=T)
+data<- c(0,1,2,3)
+ecdf_function<- ecdf(data)
+x_values <-sort(data)
+y_values<-ecdf_function(x_values)
+plot(x_values, y_values, type = 's', ylim = c(0, 1), xlab = 'Data', ylab = 'CDF', main = 'Cumulative Distribution Function')
+data<- c(0,1,2,3)
+ecdf_function<-ecdf(data)
+plot(ecdf_function, verticals = TRUE, main = 'Cumulative Distribution Function', xlab = 'Data', ylab = 'CDF')
+install.packages(‘stats’, dependencies = TRUE, repos=‘http://cran.us.r-project.org’)
+install.packages("‘stats’, dependencies = TRUE, repos=‘http://cran.us.r-project.org’")
+install.packages(‘stats’, dependencies = TRUE, repos=‘http://cran.us.r-project.org’)
+install.packages("‘stats’, dependencies = TRUE, repos=‘http://cran.us.r-project.org’")
+install.packages("stats", dependencies = TRUE, repos = "http://cran.rstudio.com/")
+library(statz)
+library(stats)
+n<-12
+p<-1/6
+prob_seven<-dbinom(7,n,p)
+prob_seven
+prob_eight<-dbinom(8,n,p)
+prob_eight
+prob_nine<-dbinom(9,n,p)
+prob_nine
+total_prob <- prob_seven + prob_eight + prob_nine
+total_prob
+mean_hight<-8.5
+standard_deviation<-3.5
+prob_less_than_10.5_ft<-pnorm(10.5,mean_hight,standard_deviation)
+prob_less_than_10.5_ft
+#Calculate the 80th percentile
+percentile_80 <- qnorm(0.80,mean_hight,standard_deviation)
+percentile_80
+#Calculating Uniform distribution
+the_lower_bound<-0
+the_upper_bound<-1
+prob_less_than_0.3<-punif(0.3,the_lower_bound,the_upper_bound)
+prob_less_than_0.3
+#Calculating probability for Chi-squared distribution
+df<-5
+probability_that_X_is_less_than_or_equal3.25<-pchisq(0.3,5)
+probability_that_X_is_less_than_or_equal3.25<-pchisq(3.25,5)
+probability_that_X_is_less_than_or_equal3.25
+probability_that_X_is_greater_than3.25<-1-probability_that_X_is_less_than_or_equal3.25
+probability_that_X_is_greater_than3.25
+1-pchisq(3.25,df)
+f<- function(x) 3 *x^2
+integrate(f,0.3,0.8)
+binom.test(3,20,0.1,alternative="greater")
+binom.test(3,20,0.1,alternative="greater",conf.level=0.95)
+binom.test(13,17,0.05,alternative="two.sided",conf.level=0.9)
+binom.test(17,13,0.75,alternative="two.sided")
+binom.test(13,17,0.75,alternative="two.sided")
+binom.test(4,10,0.75,alternative='two.sided")
+binom.test(4,10,0.75,alternative="two.sided")
+list=c(5, 6, 9, 9, 11, 11, 12, 12, 15, 17)
+len(list)
+length(list)
+quantile.interval.two<-function(data,q,level){}
+quantile.interval.two<-function(data,q,level){n<-length(data) p<q alpha<-1-level r
+quantile.interval.two<-function(data,q,level){
+n<length(data)
+p<-q
+alpha<-1-level
+r<-qbinom(alpha/2,n,p)
+s<-qbinom(1-alpha/2,n,p)
+q_l<-sort(data)[r]
+q_u<-sort(data)[s]
+list(interval=c(q_l,q_u))}
+quantile.interval.two(list,0.75,0.85)
+quantile.interval.two(data=list,0.75,085)
+n<-length(data)
+quantile.interval.two<-function(data,q,level){#
++ n<-length(data)#
++ p<-q#
++ alpha<-1-level#
++ r<-qbinom(alpha/2,n,p)#
++ s<-qbinom(1-alpha/2,n,p)#
++ q_l<-sort(data)[r]#
++ q_u<-sort(data)[s]#
++ list(interval=c(q_l,q_u))}
+quantile.interval.two(data=list,0.75,085)
+quantile.interval.two<-function(data,q,level){#
++ n<-length(data)#
++ p<-q#
++ alpha<-1-level#
++ r<-qbinom(alpha/2,n,p)#
++ s<-qbinom(1-alpha/2,n,p)#
++ q_l<-sort(data)[r]#
++ q_u<-sort(data)[s]#
++ list(interval=c(q_l,q_u))}
+quantile.interval.two<-function(data,q,level){#
+ n<-length(data)#
+ p<-q#
+alpha<-1-level#
+r<-qbinom(alpha/2,n,p)#
+s<-qbinom(1-alpha/2,n,p)#
+ q_l<-sort(data)[r]#
+q_u<-sort(data)[s]#
++ list(interval=c(q_l,q_u))}
+quantile.interval.two<-function(data,q,level){#
+ n<-length(data)#
+ p<-q#
+alpha<-1-level#
+r<-qbinom(alpha/2,n,p)#
+s<-qbinom(1-alpha/2,n,p)#
+ q_l<-sort(data)[r]#
+q_u<-sort(data)[s]#
+list(interval=c(q_l,q_u))}
+quantile.interval.two(data=list,0.75,085)
+quantile.interval.two<-function(data,q,level){#
+ n<-length(data)#
+ p<-q#
+alpha<-1-level#
+r<-qbinom(p,n,alpha/2)#
+s<-qbinom(p,n,1-alpha/2)#
+ q_l<-sort(data)[r]#
+q_u<-sort(data)[s]#
+list(interval=c(q_l,q_u))}
+quantile.interval.two(data=list,0.75,085)
+quantile.interval.two(data=list,q=0.75,level=85)
+quantile.interval.two<-function(data,q,level){ #
+#
+n<-length(data) #
+#
+ p<-q #
+#
+ alpha<-1-level #
+#
+ r<-qbinom(alpha/2,n, p) #
+#
+ s<-qbinom(1-alpha/2,n, p)+1 #
+#
+ q_l<-sort(data)[r] #
+#
+ q_u<-sort(data)[s] #
+#
+ list(interval=c( q_l,q_u))}
+quantile.interval.two(list,0.75.0.85)
+quantile.interval.two(list,0.75,0.85)
+quantile.interval.two(list,0.5,0.95)
+quantile.interval.two(list,0.3,0.90)
+binom.test(5,8,0.5,alternative="less")
+data=c(11,12,12,15,15,16,16,19)
+length(data)
+quantile.interval.two(data,0.5,0.95)
+binom.test(4,7,0.5,alternative="less")
+x=c(62.0, 60.0, 61.0, 57.0, 58.0, 55.0, 60.0, 55.5, 60.0, 62.5)
+y=c(57.75, 57.75, 58.00, 59.00, 58.00, 55.75, 59.00,	 54.00, 59.75, 59.75)
+diff=y-x
+summary(diff)
+boxplot(diff, main="Difference in sprint times")
+hist(diff,main="Diference in Sprint times",xlab="Y-X")
+par(mfrow = c(1, 2))
+hist(x, main = "Sprint times before", xlab = "x", ylab = "Frequency")
+hist(y, main = "Sprint times after", xlab = "y", ylab = "Frequency")
+par(mfrow = c(1, 2))
+hist(x, main = "Sprint times before", xlab = "x", ylab = "Frequency")
+d <- sort(diff)
+n <- length(d)
+matrix_sum <- matrix(d, ncol=n, nrow=n, byrow=T)+ matrix(d, ncol=n, nrow=n, byrow=F)
+pair_averages <- matrix_sum[!upper.tri(matrix_sum)]/2
+sort(pair_averages)
+wilcox.test(diff, alternative="two.sided", exact=T, conf.level=0.90)
+med_diff_ci <- function(diff, conf.level){}
+med_diff_ci <- function(diff, conf.level){ d <- sort(diff)#
+	n <- length(d)#
+	alpha <- 1-conf.level#
+	matrix_sum <- matrix(d, ncol=n, nrow=n, byrow=T)+ matrix(d, ncol=n, nrow=n, byrow=F)#
+	pair_averages <- matrix_sum[!upper.tri(matrix_sum)]/2#
+	w_alpha_2 <-qsignrank(alpha/2, n)#
+	low_lim<-sort(pair_averages)[w_alpha_2]#
+	upp_lim <- sort(pair_averages)[((n*(n+1))/2)+1-w_alpha_2]#
+	list(interval=c(low_lim, upp_lim))#
+   }
+med_diff_ci <- function(diff, conf.level){  }
+med_diff_ci <- function(diff, conf.level){+  }
+med_diff_ci <- function(diff, conf.level){  }
+med_diff_ci <- function(diff, conf.level){d <- sort(diff)n <- length(d)alpha <- 1-conf.level#
+	matrix_sum <- matrix(d, ncol=n, nrow=n, byrow=T)+ matrix(d, ncol=n, nrow=n, byrow=F)#
+	pair_averages <- matrix_sum[!upper.tri(matrix_sum)]/2#
+	w_alpha_2 <-qsignrank(alpha/2, n)#
+	low_lim<-sort(pair_averages)[w_alpha_2]#
+	upp_lim <- sort(pair_averages)[((n*(n+1))/2)+1-w_alpha_2]#
+	list(interval=c(low_lim, upp_lim))
+med_diff_ci <- function(diff, conf.level){#
+	d <- sort(diff)#
+	n <- length(d)#
+	alpha <- 1-conf.level#
+	matrix_sum <- matrix(d, ncol=n, nrow=n, byrow=T)+ matrix(d, ncol=n, nrow=n, byrow=F)#
+	pair_averages <- matrix_sum[!upper.tri(matrix_sum)]/2#
+	w_alpha_2 <-qsignrank(alpha/2, n)#
+	low_lim<-sort(pair_averages)[w_alpha_2]#
+	upp_lim <- sort(pair_averages)[((n*(n+1))/2)+1-w_alpha_2]#
+	list(interval=c(low_lim, upp_lim))#
+}
+med_diff_ci (diff=diff, conf.level=0.90)
+x=c(3,5,6,-3)
+Sample(x,5,replace=T)
+sample(x,5,replace=T)
+install.packages("rsconnect")
+setwd("/Users/sakibhussen/Desktop/C_MOOR/C_MOOR_Project")
+library(rsconnect)#
+rsconnect::writeManifest()
+setwd("/Users/sakibhussen/Desktop/C_MOOR/C_MOOR_Project")
+install.packages("shinyjs")#
+library(shinyjs)
+library(rsconnect)#
+rsconnect::writeManifest()
+remove.packages("shinyjs")#
+install.packages("shinyjs", repos = "https://cran.rstudio.com")
+setwd("/Users/sakibhussen/Desktop/C_MOOR/C_MOOR_Project")#
+library(rsconnect)#
+rsconnect::writeManifest()
